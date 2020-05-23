@@ -6,10 +6,11 @@ import java.util.ArrayList;
 public class Operaciones {
 
 
+	grafo migrafo = new grafo();
 	ArrayList<String> Dicvalores = new ArrayList<String>();
 	
 	
-	
+
 
 
 	//Funcion para leer archivo de texto y pasarlo a array
@@ -22,6 +23,8 @@ public class Operaciones {
 	        while ((leerlinea = bufferedReader.readLine()) != null) {
 	        	
 	        	String[]ciudad;
+	        	ciudad = leerlinea.split(" ");
+	        	//migrafo.insertarVertice(ciudad[0], true);
 	        	
 
 	        
@@ -37,3 +40,4 @@ public class Operaciones {
 
 
 }
+
